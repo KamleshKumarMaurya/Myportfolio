@@ -11,6 +11,71 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Experience Section */
+.experience {
+  padding: 100px 0;
+  background: #111;
+  color: #fff;
+}
+
+.experience .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.experience .experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.exp-card {
+  background: #1c1c1c;
+  padding: 30px 25px;
+  border-left: 5px solid #00C6FF;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.exp-header h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00C6FF;
+  margin-bottom: 5px;
+}
+
+.exp-duration {
+  font-size: 14px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.exp-company {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+.exp-details {
+  list-style: disc;
+  padding-left: 20px;
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -676,82 +741,4 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-    /* Experience Section */
-.experience {
-    padding: 100px 0;
-    background: #111;
-    color: #fff;
-}
-
-.experience .title {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.experience .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #fff;
-    transform: translateX(-50%);
-}
-
-.experience .experience-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.experience .card {
-    background: #222;
-    border-radius: 10px;
-    padding: 25px 30px;
-    transition: 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.experience .card:hover {
-    background: #1e1e1e;
-    transform: translateY(-5px);
-}
-
-.experience .box h3 {
-    font-size: 22px;
-    color: #00C6FF;
-    margin-bottom: 5px;
-}
-
-.experience .box span {
-    font-size: 16px;
-    color: #ccc;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.experience .box h4 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #f1f1f1;
-    margin-bottom: 15px;
-}
-
-.experience .box ul {
-    list-style: disc;
-    padding-left: 20px;
-    color: #ddd;
-}
-
-.experience .box ul li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
 }
